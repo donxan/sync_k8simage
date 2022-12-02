@@ -85,7 +85,7 @@ $ docker pull registry.cn-hangzhou.aliyuncs.com/kainstall/kube-scheduler:[镜像
 
 ## 文件介绍
 
-- `config.yaml`: 供 `generate_sync_yaml.py` 脚本使用，此文件配置了需要动态(获取`last`个最新的版本)同步的镜像列表。
+- `config.yaml`: 供 `generate_sync_yaml.py` 脚本使用，此文件配置了需要动态(获取`last`最新的版本)同步的镜像列表。
 - `custom_sync.yaml`: 自定义的 [`skopeo`](https://github.com/containers/skopeo) 同步源配置文件。
 - `generate_sync_yaml.py`: 根据配置，动态生成 [`skopeo`](https://github.com/containers/skopeo) 同步源配置文件。
 - `sync.sh`: 用于执行同步操作。
